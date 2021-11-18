@@ -10,6 +10,7 @@ const arr = require('../productos.json')
 
 let c = new contenedor.Contenedor("productos.json")
 
+let admin = true
 
 router.get ("/", async (req,res)=>{
     let allProd=  await c.getAll()
