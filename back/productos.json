@@ -1,14 +1,32 @@
 [
   {
-    "nombreprod": "goma",
-    "precio": 78,
+    "nombreprod": "tijeras",
+    "precio": "540",
     "foto": "https://http2.mlstatic.com/D_NQ_NP_715532-MLA41715527036_052020-O.jpg",
-    "id": "3"
+    "id": 1
   },
   {
-    "nombreprod": "cuaderno",
-    "precio": "380",
-    "foto": " https://http2.mlstatic.com/D_NQ_NP_715532-MLA41715527036_052020-O.jpg",
+    "nombreprod": "tijeras",
+    "precio": "850",
+    "foto": "https://http2.mlstatic.com/D_NQ_NP_715532-MLA41715527036_052020-O.jpg",
+    "id": 2
+  },
+  {
+    "nombreprod": "asdas",
+    "precio": "540",
+    "foto": "https://http2.mlstatic.com/D_NQ_NP_715532-MLA41715527036_052020-O.jpg",
+    "id": 3
+  },
+  {
+    "nombreprod": "tijeras",
+    "precio": "1",
+    "foto": "https://http2.mlstatic.com/D_NQ_NP_715532-MLA41715527036_052020-O.jpg",
     "id": 4
+  },
+  {
+    "nombreprod": "xxxx",
+    "precio": "222",
+    "foto": "https://http2.mlstatic.com/D_NQ_NP_715532-MLA41715527036_052020-O.jpg",
+    "id": 5
   }
 ]

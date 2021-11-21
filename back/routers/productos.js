@@ -25,10 +25,15 @@ router.get("/:id", async (req,res)=>{
 })
 
 router.post("/", async(req,res)=>{
-    console.log(req.body)
-    let nuevoProd = await c.save(req.body)
-    let allProd=  await c.getAll()
-    res.send(allProd)
+   
+    console.log( req.query.admin)
+    if(req.query.admin){
+        let nuevoProd = await c.save(req.body)
+        let allProd=  await c.getAll()
+        res.send(allProd)
+    }else{
+        res.send({ error :404, ruta: 'localhost:8080/api/productos', método: "'POST' no autorizada "})
+    }
 })
 
 

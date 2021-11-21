@@ -10,15 +10,10 @@ const contenedor = require("../contenedor")
 
 let c = new contenedor.Contenedor("productos.json")
 
-
-
-
 router.get("/", async(req,res)=>{
     let allProd=  await c.getAll()
- 
-    let carro= tabla()
-   
-    res.send(carro)
+  
+    res.send(allProd)
    
 })
 
