@@ -23,8 +23,8 @@ const borrarPorId =  (array, id) =>{
 
 class Producto{
     constructor(nombreprod,precio){
-        this.nombreprod="calculadora",
-        this.precio= 25000
+        this.nombreprod=nombreprod,
+        this.precio= precio
     }
 }
 

@@ -1,0 +1,48 @@
+[
+  {
+    "id": 1,
+    "productos": [
+      {
+        "nombreprod": "tijeras",
+        "precio": "850",
+        "foto": "https://http2.mlstatic.com/D_NQ_NP_715532-MLA41715527036_052020-O.jpg",
+        "id": 2
+      },
+      {
+        "nombreprod": "tijeras",
+        "precio": "850",
+        "foto": "https://http2.mlstatic.com/D_NQ_NP_715532-MLA41715527036_052020-O.jpg",
+        "id": 2
+      },
+      {
+        "nombreprod": "tijeras",
+        "precio": "850",
+        "foto": "https://http2.mlstatic.com/D_NQ_NP_715532-MLA41715527036_052020-O.jpg",
+        "id": 2
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "productos": [
+      {
+        "nombreprod": "tijeras",
+        "precio": "850",
+        "foto": "https://http2.mlstatic.com/D_NQ_NP_715532-MLA41715527036_052020-O.jpg",
+        "id": 2
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "productos": []
+  },
+  {
+    "id": 5,
+    "productos": []
+  },
+  {
+    "id": 6,
+    "productos": []
+  }
+]
