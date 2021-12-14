@@ -4,12 +4,12 @@ let cargarCArd =  (data) =>{
      <div class="card" style="width: 18rem;">
     <img src="${p.foto}" class="card-img-top" alt="...">
     <div class="card-body">
-      <h5 class="card-title">${p.nombreprod}</h5>
+      <h5 class="card-title" id="nombrecard">${p.nombreprod}</h5>
       <p class="card-text"></p>
     </div>
     <ul class="list-group list-group-flush">
-      <li class="list-group-item"> ID:${p.id}</li>
-      <li class="list-group-item">PRECIO: ${p.precio}</li>
+      <li class="list-group-item" id="idcard"> ID:${p.id}</li>
+      <li class="list-group-item" id="preciocard">PRECIO: ${p.precio}</li>
     </ul>
     <td ><button onClick=" porId (${p.id})">agregar</button></td>
   </div>`)).join('')
@@ -48,15 +48,3 @@ let cargarProducto = () =>{
   
 }
 
-let carrio = document.getElementById('cardCarrito')
-
-let porId = (id) =>{
-  fetch(`http://localhost:8080/api/productos/${id}`,{})
-        .then((res)=> res.json())   
-        .then(data => carrio.innerHTML += `<tr  >
-        <th scope="row" id="${data.id}" >${data.id }</th>
-        <td >${data.nombreprod}</td>
-        <td>${data.precio}</td>
-    </tr>`)
-       
-}

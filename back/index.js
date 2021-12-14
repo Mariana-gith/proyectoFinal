@@ -14,6 +14,9 @@ const contenedor = require("./contenedor")
 
 let c = new contenedor.Contenedor("productos.json")
 
+const contCarrito = require("./carrito")
+let car = new contCarrito.ContenedorCarritos("carritos.json")
+
 const apisRoutes = require("./routers/productos")
 app.use("/api/productos",apisRoutes)
 const apiRoutes = require ('./routers/carrito',"./routers/productos")

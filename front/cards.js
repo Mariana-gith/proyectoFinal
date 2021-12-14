@@ -9,7 +9,7 @@ let cargarTabla =  (data) =>{
       <td ><button onClick=" cambiar (${p.id})">CAMBIAR</button></td>
       <td ><button  onClick="borrar(${p.id})">x</button></td>
       
-  </tr>`)).join('')
+  </tr>`))
 
   document.getElementById('tbody').innerHTML=  tabla  
   if(data.length=== 0){
@@ -18,16 +18,15 @@ let cargarTabla =  (data) =>{
 }
 
 let mostrarTabla = () =>{
-  fetch("http://localhost:8080/api/productos",{})
+  fetch("http://localhost:8080/api/carrito",{})
              .then((res)=> res.json())   
-             .then(data => cargarTabla(data))
-
+             .then(data =>cargarTabla(data))
 }
 
 let carro = document.getElementById('cardCarrito')
 
 let porId = (id) =>{
-  fetch(`http://localhost:8080/api/productos/${id}`,{})
+  fetch(`http://localhost:8080/api/carrito/${id}`,{})
         .then((res)=> res.json())   
         .then(data => carro.innerHTML += `<tr  >
         <th scope="row" id="${data.id}" >${data.id }</th>
@@ -38,7 +37,7 @@ let porId = (id) =>{
 }
 
 let borrar = (id) =>{
-  fetch(`http://localhost:8080/api/productos/${id}`,{method: "DELETE"})
+  fetch(`http://localhost:8080/api/carrito/${id}`,{method: "DELETE"})
         .then((res)=> res.json())   
         .then(data => console.log(data))
 }
@@ -48,7 +47,7 @@ let cambiar = (id) =>{
   let body = {nombreprod:"goma", precio:78,foto:"", foto:"https://http2.mlstatic.com/D_NQ_NP_715532-MLA41715527036_052020-O.jpg"}
   console.log('body:', body)
 
-  fetch(`http://localhost:8080/api/productos/${id}`,{method: "PUT", body:JSON.stringify(body), headers:{ 'Content-Type': 'application/json'}})
+  fetch(`http://localhost:8080/api/carrito  ${id}`,{method: "PUT", body:JSON.stringify(body), headers:{ 'Content-Type': 'application/json'}})
         .then((res)=> res.json())   
         .then(data => console.log(body))
 

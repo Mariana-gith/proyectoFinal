@@ -15,7 +15,7 @@ let carros = new contCarrito.ContenedorCarritos("carritos.json")
 
 router.post("/", async(req,res)=>{
     let nuevoId = await carros.agregarCarrito()
-    res.send({nuevoId : nuevoId})
+    res.send(nuevoId)
 })
 
 router.delete("/:id", async (req,res)=>{
@@ -45,7 +45,7 @@ router.post("/:id/productos", async (req,res)=>{
     if(resultado === null){
         res.sendStatus(404)
     }
-    res.sendStatus( 200)
+    res.send( resultado)
 
 })
 module.exports = router
